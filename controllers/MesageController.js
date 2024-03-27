@@ -75,7 +75,7 @@ const SendMessage = async (cityName, phoneNumber) => {
 }
 
 // Schedule the initial job to fetch phone numbers and start the process
-// schedule.scheduleJob('*/2 * * * *', fetchPhoneNumbers);
+schedule.scheduleJob('*/2 * * * *', fetchPhoneNumbers);
 
 module.exports = {
     SendMessage,
