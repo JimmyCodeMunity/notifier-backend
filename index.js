@@ -53,9 +53,9 @@ mongoose.connect(dbconnection, { useNewUrlParser: true, useUnifiedTopology: true
     })
 
 // Schedule the sendMessage function to run every 2 minutes
-// const job = schedule.scheduleJob('*/2 * * * *', () => {
-//     // SendMessage();
-// });
+const job = schedule.scheduleJob('*/2 * * * *', () => {
+    // SendMessage();
+});
 
 
 // make routes
